@@ -1,0 +1,26 @@
+﻿@model List<TestAssignmentAvSoft.Models.CounterSpecialModel>
+
+@{
+    ViewBag.Title = "Counter list";
+    Layout = "_Layout";
+}
+
+<h2>Counter list</h2>
+
+<table class="table-fill">
+    <thead>
+    <th>Id</th>
+    <th>Count</th>
+    <th>CountMoreTheNone</th>
+        </thead>
+    <tbody class="table-hover">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Count</td>
+                <td>@item.CountMoreThenOne</td>
+            </tr>
+        }
+    </tbody>
+</table>
